@@ -10,4 +10,11 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+void print_environment(void)
+void exec_cmd(char **shll)
+void free_array(char **arr)
+int main(void)
+int str-int(char *str)
+void shell_loop(int is_interactive)
+
 
