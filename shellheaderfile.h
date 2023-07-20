@@ -16,5 +16,6 @@ void free_array(char **arr)
 int main(void)
 int str-int(char *str)
 void shell_loop(int is_interactive)
-
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+char *string_duplicate(char *str)
 
