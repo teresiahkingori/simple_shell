@@ -4,7 +4,7 @@
  * @str: The string to be converted.
  * Return: The integer value of str.
  **/
-int str-int(char *str)
+int str_to_int(char *str)
 {
 int result = 0;
 int sign = 1;
