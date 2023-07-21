@@ -1,4 +1,5 @@
 #include "shellheaderfile.h"
+extern char **environ;
 /**
  ** exec_cmd - the Function that executes a command.
  ** @shll: The command that will be executed.
