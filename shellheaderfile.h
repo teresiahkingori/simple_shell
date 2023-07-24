@@ -15,7 +15,7 @@ extern char **environ;
 
 void print_environment(void);
 void exec_cmd(char **shll);
-void free_array(char **arr);
+
 int main(void);
 int str_to_int(char *str);
 void shell_loop(int is_interactive);
@@ -32,5 +32,10 @@ void echo(int insrt);
 
 void _puts(char *);
 void print_environment(void);
+
+void free_arr(char **arr);
+void get_path(char **shll);
+void exec_cmd(char **shll);
+
 
 #endif
