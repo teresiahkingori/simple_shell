@@ -25,7 +25,7 @@ void execute_conditions(char **arguments, char *line);
 void free_arr(char **arr);
 void get_path(char **arguments);
 void execute_command(char **arguments);
-
+char **env_var = environ;
 void _puts(char *);
 void print_environment(void);
 
