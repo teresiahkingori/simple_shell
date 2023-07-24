@@ -27,5 +27,6 @@ void get_path(char **arguments);
 void execute_command(char **arguments);
 
 void _puts(char *);
+void print_environment(void);
 
 #endif
