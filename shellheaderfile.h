@@ -13,9 +13,9 @@
 
 extern char **environ;
 
+
 void print_environment(void);
 void exec_cmd(char **shll);
-
 int main(void);
 int str_to_int(char *str);
 void shell_loop(int is_interactive);
@@ -29,13 +29,9 @@ void get_path(char **arguments);
 void execute_command(char **arguments);
 void sa_Handler(int sg_num);
 void echo(int insrt);
-
 void _puts(char *);
 void print_environment(void);
-
 void free_arr(char **arr);
 void get_path(char **shll);
-void exec_cmd(char **shll);
-
 
 #endif
