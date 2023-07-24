@@ -20,7 +20,7 @@ arr = NULL;
 **/
 int main(void)
 {
-signal(SIGINT,sgt_Handler);
+signal(SIGINT,sa_Handler);
 shell_loop(is_interactive());
 return (0);
 }
