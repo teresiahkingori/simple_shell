@@ -16,6 +16,7 @@ arr = NULL;
 }
 /**
 * main - Entry point of the program.
+* @sa_Handler: the handler
 * Return: 0.
 **/
 int main(void)
