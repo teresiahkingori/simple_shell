@@ -21,7 +21,7 @@ arr = NULL;
 **/
 int main(void)
 {
-signal(SIGINT,sa_Handler);
-shell_loop(is_interactive());
+signal(SIGINT, sa_Handler);
+echo(isatty(STDIN_FILENO));
 return (0);
 }

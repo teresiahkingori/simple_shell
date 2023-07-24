@@ -1,8 +1,8 @@
 #include "shellheaderfile.h"
 
 /**
- *print_environment - the  Function that prints the environment variables
- *@environ: this is the command that will be executed.
+ * print_environment - the  Function that prints the environment variables
+ * @environ; this is the command that will be executed.
  **/
 void print_environment(void)
 {

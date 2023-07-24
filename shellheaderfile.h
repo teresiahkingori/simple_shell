@@ -11,6 +11,8 @@
 #include <unistd.h>
 #include <signal.h>
 
+extern char **environ;
+
 void print_environment(void);
 void exec_cmd(char **shll);
 void free_array(char **arr);
@@ -25,6 +27,8 @@ void execute_conditions(char **arguments, char *line);
 void free_arr(char **arr);
 void get_path(char **arguments);
 void execute_command(char **arguments);
+void sa_Handler(int sg_num);
+void echo(int insrt);
 
 void _puts(char *);
 void print_environment(void);
