@@ -1,4 +1,6 @@
 #include "shellheaderfile.h"
+void free_arr(char **arr);
+
 /**
  ** shell_loop - Function that starts the shell loop to read and execute commands.
  ** @is_interactive: Return value of isatty either 0 or 1.
@@ -41,7 +43,7 @@ free_arr(arguments);
 arguments = NULL;
 continue;
 }
-execute_command(arguments);
+exec_cmd(arguments);
 free_arr(arguments);
 }
 free(line);

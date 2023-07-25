@@ -3,7 +3,7 @@
  * free_array - Function that frees an array.
  * @arr: The array to be freed.
  **/
-void free_array(char **arr)
+void free_arr(char **arr)
 {
 int i;
 for (i = 0; arr[i]; i++)
