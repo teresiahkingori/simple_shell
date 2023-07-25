@@ -31,7 +31,6 @@ void sa_Handler(int sg_num);
 void echo(int insrt);
 void _puts(char *);
 void print_environment(void);
-void free_arr(char **arr);
-void get_path(char **shll);
+
 
 #endif

@@ -1,7 +1,7 @@
 #include "shellheaderfile.h"
 /**
- * shell_loop - Function that starts the shell loop to read and execute commands.
- * @is_interactive: Return value of isatty either 0 or 1.
+ ** shell_loop - Function that starts the shell loop to read and execute commands.
+ ** @is_interactive: Return value of isatty either 0 or 1.
  **/
 void shell_loop(int is_interactive)
 {
