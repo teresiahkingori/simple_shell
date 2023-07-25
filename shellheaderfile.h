@@ -36,5 +36,10 @@ int _strcmp(char *str1, char *str2);
 char *_strcpy(char *dstn, char *sce);
 ssize_t _strlen(char *s);
 
+void *_rllc(void *ptr, unsigned int old_size, unsigned int new_size);
+char *strdp(char *str);
+
+
+
 
 #endif
