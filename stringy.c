@@ -1,80 +1,78 @@
 #include "shellheaderfile.h"
 
 /**
- *  * get_string_length - function that returns the length of a given string
- *   * @str: the string whose length is to be found
+ *  * _strlen - funtion that prints the length of a given string
+ *   * @s: string whose length is to be found
  *    *
- *     * Return: length of the string
+ *     * Return: length of string
  **/
-ssize_t get_string_length(char *str)
+ssize_t _strlen(char *s)
 {
-ssize_t length = 0;
-while (str && *(str + length))
-length++;
-return length;
+ssize_t len = 0;
+while (s && *(s + len))
+len++;
+return (len);
 }
 /**
-*  * copy_string - function that copies a string from source to destination
-*   * @destination: the new string
-*    * @source: the original string
-*     * Return: pointer to the destination string
+*  * _strcpy - function that copies a string from sce to dstn
+*   * @dstn: new string
+*    * @sce: original string
+*     * Return: pointer to dstn
 **/
-char *copy_string(char *destination, char *source)
+char *_strcpy(char *dstn, char *sce)
 {
 int i;
-for (i = 0; source[i] != '\0'; i++)
-destination[i] = source[i];
-destination[i] = '\0';
-return destination;
+for (i = 0; sce[i] != '\0'; i++)
+dstn[i] = sce[i];
+dstn[i] = '\0';
+return (dstn);
 }
 /**
-
-*  * concatenate_strings - function that appends two strings
-
-*   * @destination: the new string
-
-*    * @source: the original string
+*  * append_str - function that appends two strings
+*   * @dstn: new string
+*    * @sce: original string
+*     *
 *      * Return: pointer to the joined string
 **/
-char *concatenate_strings(char *destination, const char *source)
+char *append_str(char *dstn, const char *sce)
 {
-int destination_length = 0;
+int dstn_len = 0;
 int i = 0;
-while (destination[destination_length] != '\0')
-destination_length++;
-while (source[i] != '\0')
+while (dstn[dstn_len] != '\0')
+dstn_len++;
+while (sce[i] != '\0')
 {
-destination[destination_length] = source[i];
-destination_length++;
+dstn[dstn_len] = sce[i];
+dstn_len++;
 i++;
 }
-destination[destination_length] = '\0';
-return destination;
+dstn[dstn_len] = '\0';
+return (dstn);
 }
 /**
-*  * compare_strings - function that compares two strings
-*   * @str1: the first string
-*    * @str2: the second string
-*     * Return: 0 if the strings are equal, if not, the difference
+*  * _strcmp - function that compares two strings
+*   * @str1: string 1
+*    * @str2: string 2
+*     * Return: 0 if strings are equal if not the difference
 **/
-int compare_strings(char *str1, char *str2)
+int _strcmp(char *str1, char *str2)
 {
 int i = 0;
 while (str1[i] == str2[i])
 {
 if (str1[i] == '\0')
-return 0;
+return (0);
 i++;
 }
-return str1[i] - str2[i];
+return (str1[i] - str2[i]);
 }
 /**
-*  * compare_strings2 - compares 2 strings
-*   * @str1: the first string
-*    * @str2: the second string
-*     * Return: 0 if the strings are equal, else the difference
+*  * _strcmp2 - compares 2 strings
+*   * @str1: string 1
+*    * @str2: string 2
+*     * Return: 0 if strings are equal else the difference
 **/
-int compare_strings2(const char *str1, const char *str2)
+int _strcmp2(const char *str1, const char *str2)
 {
 while (*str1 && (*str1 == *str2))
 {

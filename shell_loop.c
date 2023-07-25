@@ -5,7 +5,7 @@ void free_arr(char **arr);
  ** shell_loop - Function that starts the shell loop to read and execute commands.
  ** @is_interactive: Return value of isatty either 0 or 1.
  **/
-void shell_loop(int is_interactive)
+void echo(int is_interactive)
 {
 char *line = NULL;
 char **arguments = NULL;
