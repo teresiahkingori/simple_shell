@@ -29,8 +29,11 @@ void get_path(char **arguments);
 void execute_command(char **arguments);
 void sa_Handler(int sg_num);
 void echo(int insrt);
-void _puts(char *);
+void _puts(char *env_var);
 void print_environment(void);
-
+char *append_str(char *dstn, const char *sce);
+int _strcmp(char *str1, char *str2);
+char *_strcpy(char *dstn, char *sce);
+ssize_t _strlen(char *s);
 
 #endif
