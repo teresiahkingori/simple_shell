@@ -7,7 +7,7 @@
  *     *
  *      * Return: Array of elements that have been parsed.
  **/
-char **str_brk(char *ln, char *dlm)
+char **str_break(char *ln, char *dlm)
 {
 char *Ptr = NULL;
 char **shll = NULL;

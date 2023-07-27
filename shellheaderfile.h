@@ -22,7 +22,7 @@ void shell_loop(int is_interactive);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *string_duplicate(char *str);
 int _strcmp2(const char *s1, const char *s2);
-char **str_break(char *str, const char *delimiter);
+
 void execute_conditions(char **arguments, char *line);
 void free_arr(char **arr);
 void get_path(char **arguments);
@@ -38,7 +38,7 @@ ssize_t _strlen(char *s);
 
 void *_rllc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *strdp(char *str);
-
+char **str_brk(char *ln, char *dlm);
 
 
 

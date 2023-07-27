@@ -2,9 +2,12 @@
 void free_arr(char **arr);
 
 /**
- ** shell_loop - Function that starts the shell loop to read and execute commands.
+ * echo-reads commands
+ ** shell_loop - Function that starts the
+ ** shell loop to read and execute commands.
  ** @is_interactive: Return value of isatty either 0 or 1.
  **/
+
 void echo(int is_interactive)
 {
 char *line = NULL;
@@ -24,7 +27,7 @@ exit(0);
 }
 if (_strcmp2(line, "\n") == 0)
 continue;
-arguments = str_break(line, " \t\r\n");
+arguments = str_brk(line, " \t\r\n");
 execute_conditions(arguments, line);
 if (_strcmp2(arguments[0], "env") == 0)
 {
