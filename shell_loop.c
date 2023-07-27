@@ -27,8 +27,6 @@ exit(0);
 }
 if (_strcmp2(line, "\n") == 0)
 continue;
-arguments = str_brk(line, " \t\r\n");
-execute_conditions(arguments, line);
 if (_strcmp2(arguments[0], "env") == 0)
 {
 print_environment();

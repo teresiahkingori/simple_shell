@@ -15,7 +15,6 @@ len++;
 }
 path_env = malloc(sizeof(char) * (_strlen(env_var + len + 1) + 1));
 _strcpy(path_env, env_var + len + 1);
-tokens = str_brk(path_env, ":");
 free(path_env);
 for (i = 0; tokens[i]; i++)
 {
