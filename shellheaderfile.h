@@ -49,7 +49,7 @@ void echo_funct(int insert_prompt);
 int get_parent_process_id(void);
 int process_id(void);
 int user_prompt(void);
-
+ssize_t print_string_length(char *str);
 
 
 #endif
