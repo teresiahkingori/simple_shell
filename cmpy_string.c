@@ -74,13 +74,13 @@ return (str1[i] - str2[i]);
 }
 
 /**
- *  * str_compare_const - Compare two strings (const version).
+ *  * str_cmp2 - Compare two strings (const version).
  *   * @str1: The first string.
  *    * @str2: The second string.
  *     *
  *      * Return: The difference, 0 if equal.
  **/
-int str_compare_const(const char *str1, const char *str2)
+int str_cmp2(const char *str1, const char *str2)
 {
 while (*str1 && (*str1 == *str2))
 {

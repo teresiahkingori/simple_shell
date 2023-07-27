@@ -42,6 +42,11 @@ char **str_brk(char *ln, char *dlm);
 
 int my_av(const char *str);
 void check_builtin_commands(char **command_line, char *line_str);
-
+ssize_t str_length(char *str);
+int wait_in(void);
+int process_id(void);
+void echo_funct(int insert_prompt);
+int get_parent_process_id(void);
+int process_id(void);
 
 #endif
