@@ -40,6 +40,8 @@ void *_rllc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *strdp(char *str);
 char **str_brk(char *ln, char *dlm);
 
+int my_av(const char *str);
+void check_builtin_commands(char **command_line, char *line_str);
 
 
 #endif
